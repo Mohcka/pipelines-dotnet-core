@@ -45,7 +45,7 @@ steps:
     azureSubscription: 'Azure subscription 1 (a89c8411-ac5b-4a9b-9d97-785afff0a002)'
     appType: 'webApp'
     WebAppName: 'michaelWalkerRevDemo0'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
 
 # - script: dotnet build --configuration $(buildConfiguration)
 #   displayName: 'dotnet build $(buildConfiguration)'
